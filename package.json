@@ -1,6 +1,5 @@
 {
   "name": "grande-iconfont-sync",
-  "private": true,
   "version": "1.0.0",
   "description": "CLI tool and MCP server for automatically synchronizing Alibaba iconfont project files to local, supporting file difference comparison (ignoring timestamps) and automatic updates.",
   "type": "module",

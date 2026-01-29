@@ -75,7 +75,7 @@ Or if installed globally:
 {
   "mcpServers": {
     "iconfont-sync": {
-      "command": "iconfont-sync",
+      "command": "iconfont-sync-mcp",
       "env": {
         "account": "your_account",
         "password": "your_password",
