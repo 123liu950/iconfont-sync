@@ -19,12 +19,12 @@ A CLI tool and MCP (Model Context Protocol) server for automatically synchronizi
 ### Installation
 
 ```bash
-npm install -g iconfont-sync-mcp
+npm install -g iconfont-sync
 ```
 
 Or use locally:
 ```bash
-npm install iconfont-sync-mcp
+npm install iconfont-sync
 ```
 
 Usage
@@ -162,8 +162,7 @@ MCP 服务器模式
 {
   "mcpServers": {
     "iconfont-sync": {
-      "command": "node",
-      "args": ["/path/to/node_modules/iconfont-sync-mcp/index.cjs"],
+      "command": "iconfont-sync-mcp",
       "env": {
         "account": "你的账号",
         "password": "你的密码",
