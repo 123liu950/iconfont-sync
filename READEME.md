@@ -19,18 +19,18 @@ A CLI tool and MCP (Model Context Protocol) server for automatically synchronizi
 ### Installation
 
 ```bash
-npm install -g iconfont-sync
+npm install -g grande-iconfont-sync
 ```
 
 Or use locally:
 ```bash
-npm install iconfont-sync
+npm install grande-iconfont-sync
 ```
 
 Usage
 CLI Mode
 ```bash
-iconfont-sync \
+npx iconfont-sync \
   --account=your_account \
   --password=your_password \
   --pid=your_project_id \
@@ -47,7 +47,7 @@ export pid=your_project_id
 export localPath=./src/icons
 export files=iconfont.css,iconfont.js
 
-iconfont-sync
+npx iconfont-sync
 ```
 
 MCP Server Mode
@@ -128,16 +128,16 @@ How to Find Project ID (pid)
 安装
 全局安装：
 ```bash
-npm install -g iconfont-sync-mcp
+npm install -g grande-iconfont-sync
 ```
 本地安装：
 ```bash
-npm install iconfont-sync-mcp
+npm install grande-iconfont-sync
 ```
 使用方式
 命令行模式
 ```bash
-iconfont-sync \
+npx iconfont-sync \
   --account=你的账号 \
   --password=你的密码 \
   --pid=项目ID \
@@ -153,7 +153,7 @@ export pid=项目ID
 export localPath=./src/icons
 export files=iconfont.css,iconfont.js
 
-iconfont-sync
+npx iconfont-sync
 ```
 
 MCP 服务器模式
