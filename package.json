@@ -1,17 +1,17 @@
 {
-  "name": "grande-iconfont-sync-cli",
+  "name": "grande-iconfont-sync",
   "private": true,
   "version": "1.0.0",
-  "description": "自动同步阿里 iconfont 项目文件到本地的 CLI 工具，支持对比文件差异（忽略时间戳）、自动更新新增/变更文件",
+  "description": "CLI tool and MCP server for automatically synchronizing Alibaba iconfont project files to local, supporting file difference comparison (ignoring timestamps) and automatic updates.",
   "type": "module",
   "main": "index.cjs",
   "bin": {
-    "iconfont-sync": "./bin/cli.js",
-    "iconfont-sync-server": "./bin/cli.js"
+    "iconfont-sync-mcp": "./bin/mcp.cjs",
+    "iconfont-sync": "./bin/cli.cjs"
   },
   "scripts": {
-    "start": "node src/server.cjs",
-    "start:mcp": "node index.cjs"
+    "start": "node index.cjs",
+    "sync": "node bin/cli.cjs"
   },
   "keywords": [
     "iconfont",
@@ -19,20 +19,34 @@
     "cli",
     "阿里图标库",
     "自动同步",
-    "iconfont同步"
+    "iconfont同步",
+    "alibaba",
+    "icon",
+    "font",
+    "mcp",
+    "model-context-protocol",
+    "automation"
   ],
   "author": "Grande",
+  "license": "MIT",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/123liu950/iconfont-sync"
   },
-  "homepage": "https://github.com/123liu950/iconfont-sync/blob/main/README.md",
   "bugs": {
     "url": "https://github.com/123liu950/iconfont-sync/issues"
   },
+  "homepage": "https://github.com/123liu950/iconfont-sync#readme",
+  "files": [
+    "bin/",
+    "src/",
+    "index.cjs",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.3",
     "adm-zip": "^0.5.16",
