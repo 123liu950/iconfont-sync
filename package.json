@@ -1,0 +1,47 @@
+{
+  "name": "grande-iconfont-sync-cli",
+  "private": true,
+  "version": "1.0.0",
+  "description": "自动同步阿里 iconfont 项目文件到本地的 CLI 工具，支持对比文件差异（忽略时间戳）、自动更新新增/变更文件",
+  "type": "module",
+  "main": "index.cjs",
+  "bin": {
+    "iconfont-sync": "./bin/cli.js",
+    "iconfont-sync-server": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node src/server.cjs",
+    "start:mcp": "node index.cjs"
+  },
+  "keywords": [
+    "iconfont",
+    "sync",
+    "cli",
+    "阿里图标库",
+    "自动同步",
+    "iconfont同步"
+  ],
+  "author": "Grande",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/123liu950/iconfont-sync"
+  },
+  "homepage": "https://github.com/123liu950/iconfont-sync/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/123liu950/iconfont-sync/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.3",
+    "adm-zip": "^0.5.16",
+    "axios": "^1.13.4",
+    "clsx": "2.1.1",
+    "jsencrypt": "^3.5.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.17",
+    "@types/node": "^22.0.0"
+  }
+}
